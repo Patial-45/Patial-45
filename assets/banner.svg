@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 270" width="100%" height="270" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C15" />
+      <stop offset="50%" stop-color="#0D1525" />
+      <stop offset="100%" stop-color="#090D17" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Text Name Gradient -->
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="40%" stop-color="#818CF8" />
+      <stop offset="80%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#E879F9" />
+    </linearGradient>
+
+    <!-- Chip Gradient -->
+    <linearGradient id="chip-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="cyan-glow" cx="90%" cy="15%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="purple-glow" cx="10%" cy="85%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Dot Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.4" />
+    </pattern>
+
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Plus Jakarta Sans', Inter, sans-serif; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="936" height="266" rx="16" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="1.5" filter="url(#subtle-shadow)" />
+
+  <!-- Ambient Glows -->
+  <rect x="2" y="2" width="936" height="266" rx="16" fill="url(#cyan-glow)" />
+  <rect x="2" y="2" width="936" height="266" rx="16" fill="url(#purple-glow)" />
+
+  <!-- Background Grid -->
+  <rect x="2" y="2" width="936" height="266" rx="16" fill="url(#grid)" opacity="0.75" />
+
+  <!-- Decorative Corner Accents -->
+  <path d="M24 38 L24 24 L38 24" stroke="#38BDF8" stroke-width="2" fill="none" opacity="0.6" />
+  <path d="M916 38 L916 24 L902 24" stroke="#A855F7" stroke-width="2" fill="none" opacity="0.6" />
+  <path d="M24 232 L24 246 L38 246" stroke="#6366F1" stroke-width="2" fill="none" opacity="0.6" />
+  <path d="M916 232 L916 246 L902 246" stroke="#06B6D4" stroke-width="2" fill="none" opacity="0.6" />
+
+  <!-- Top Status Badge Pill -->
+  <g transform="translate(38, 28)">
+    <rect x="0" y="0" width="340" height="26" rx="13" fill="#0F172A" stroke="#10B981" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="14" cy="13" r="4.5" fill="#10B981" />
+    <circle cx="14" cy="13" r="8" fill="#10B981" fill-opacity="0.2" />
+    <text x="28" y="17" class="sans" font-size="11" font-weight="600" fill="#34D399" letter-spacing="0.6">OPEN TO HIGH-IMPACT SDE / AI SYSTEMS ROLES</text>
+  </g>
+
+  <!-- Top Right Indicator -->
+  <g transform="translate(740, 28)">
+    <text x="0" y="17" class="mono" font-size="11" font-weight="500" fill="#64748B" letter-spacing="1">&lt;PORTFOLIO /&gt;</text>
+    <circle cx="90" cy="13" r="3" fill="#38BDF8" opacity="0.8" />
+    <circle cx="102" cy="13" r="3" fill="#818CF8" opacity="0.8" />
+    <circle cx="114" cy="13" r="3" fill="#C084FC" opacity="0.8" />
+  </g>
+
+  <!-- Main Headline Name -->
+  <text x="38" y="112" class="sans" font-size="46" font-weight="800" fill="url(#name-grad)" letter-spacing="-0.5">Sahil Patial</text>
+
+  <!-- Subtitle / Role -->
+  <text x="40" y="142" class="sans" font-size="16" font-weight="600" fill="#E2E8F0" letter-spacing="1.2">
+    FULL-STACK SOFTWARE ENGINEER | AI SYSTEMS &amp; SCALABLE ARCHITECTURES
+  </text>
+
+  <!-- Meta Description Line -->
+  <text x="40" y="168" class="sans" font-size="13" font-weight="400" fill="#94A3B8">
+    Senior Operations Associate @ De Corporate Consulting  •  MCA in AI/ML (CGPA 9.0)  •  Chandigarh, India
+  </text>
+
+  <!-- Bottom Tech Stack Chips Bar -->
+  <!-- Chip 1 -->
+  <g transform="translate(38, 195)">
+    <rect x="0" y="0" width="138" height="32" rx="8" fill="url(#chip-bg)" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="16" r="4" fill="#61DAFB" />
+    <text x="26" y="20" class="sans" font-size="12" font-weight="500" fill="#F1F5F9">React 19 &amp; TS</text>
+  </g>
+
+  <!-- Chip 2 -->
+  <g transform="translate(186, 195)">
+    <rect x="0" y="0" width="138" height="32" rx="8" fill="url(#chip-bg)" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="16" r="4" fill="#22C55E" />
+    <text x="26" y="20" class="sans" font-size="12" font-weight="500" fill="#F1F5F9">Node.js &amp; Express</text>
+  </g>
+
+  <!-- Chip 3 -->
+  <g transform="translate(334, 195)">
+    <rect x="0" y="0" width="158" height="32" rx="8" fill="url(#chip-bg)" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="16" r="4" fill="#38BDF8" />
+    <text x="26" y="20" class="sans" font-size="12" font-weight="500" fill="#F1F5F9">Postgres (pgvector)</text>
+  </g>
+
+  <!-- Chip 4 -->
+  <g transform="translate(502, 195)">
+    <rect x="0" y="0" width="132" height="32" rx="8" fill="url(#chip-bg)" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="16" r="4" fill="#EF4444" />
+    <text x="26" y="20" class="sans" font-size="12" font-weight="500" fill="#F1F5F9">Redis &amp; BullMQ</text>
+  </g>
+
+  <!-- Chip 5 -->
+  <g transform="translate(644, 195)">
+    <rect x="0" y="0" width="138" height="32" rx="8" fill="url(#chip-bg)" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="16" r="4" fill="#A855F7" />
+    <text x="26" y="20" class="sans" font-size="12" font-weight="500" fill="#F1F5F9">OpenAI &amp; Gemini</text>
+  </g>
+
+  <!-- Chip 6 -->
+  <g transform="translate(792, 195)">
+    <rect x="0" y="0" width="112" height="32" rx="8" fill="url(#chip-bg)" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="16" r="4" fill="#EAB308" />
+    <text x="26" y="20" class="sans" font-size="12" font-weight="500" fill="#F1F5F9">System Design</text>
+  </g>
+</svg>
